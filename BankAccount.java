@@ -18,6 +18,18 @@ class BankAccount {
         this.name = "Default -- fill in later";
     }
 
+    private String getName() {
+        return name;
+    }
+
+    private int getAccntNum() {
+        return accountNum;
+    }
+
+    private double getBalance() {
+        return hashTable[accountNum];
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -48,9 +60,14 @@ class BankAccount {
     }
 
     public static void toString(ArrayList<BankAccount> accountList) {
+        System.out.println();
+
         for (int i = 0; i < accountList.size(); ++i) {
             BankAccount bankAccnt = accountList.get(i);
-            // ...
+            System.out.println("User name is " + bankAccnt.getName());
+            System.out.println("Account number is " + bankAccnt.getAccntNum());
+            System.out.println("Balance is " + bankAccnt.getBalance());
+            System.out.println();
         }
     }
 }

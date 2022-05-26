@@ -48,8 +48,8 @@ class BankAccountDriver {
         }
 
         // Get social security number
-        System.out.println("Please provide your full social security number." +
-            "Format 123-45-6789 as 123456789."
+        System.out.println("Please provide your full social security number. "
+            + "Format 123-45-6789 as 123456789."
         );
         while (!validInput) {
             if (sc.hasNextInt()) {
@@ -65,7 +65,7 @@ class BankAccountDriver {
         validInput = false;
 
         // Get birthdate
-        System.out.println("Please provide your birthdate." +
+        System.out.println("Please provide your birthdate. " +
             "Formate Mar. 1, 1991 as 03011991"
         );
         while (!validInput) {
@@ -82,7 +82,7 @@ class BankAccountDriver {
         validInput = false;
 
         // Deposit money
-        System.out.println("How much money would you like to deposit today?" +
+        System.out.println("How much money would you like to deposit today? " +
             "Please enter an amount as a decimal."
         );
         while (!validInput) {
